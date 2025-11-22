@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Léo Morard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <a href="CV/CV_ANGLAIS.pdf" class="cv-button">Download my CV</a>
+    
+    <nav class="navbar">
+        <a href="#about">About Me</a>
+        <a href="#projects">University projects</a>
+        <a href="#contact">Contact Me</a>
+    </nav>
+
+    <h1>Portfolio</h1>
+
+    <div class="profile-picture-container">
+        <div class="profile-picture-frame">
+            <img src="img/PHOTO_CV.jpeg" alt="photo_pp" class="profile-picture">
+        </div>
+    </div>
+
+    <section id="about" class="contenu">
+        <h2>About Me</h2>
+        <div class="texte">
+            <p>I am currently studying for a bachelor's degree in computer science. I am a curious person with a passion for learning, particularly in the field of computer science. University has taught me to be adaptable, and I am quite independent in my work. I am looking for an internship in the field of computer science, specifically in database management. This internship is essential for completing my studies and deepening my practical knowledge in this field.</p>
+        </div>
+        
+        <h3>Technical Skills</h3>
+        <div class="skills-container">
+            <div class="skill-item">
+                <img src="img/SQL.png" alt="SQL">
+                <p>SQL</p>
+            </div>
+            <div class="skill-item">
+                <img src="img/HTML.png" alt="HTML">
+                <p>HTML</p>
+            </div>
+            <div class="skill-item">
+                <img src="img/CSS.png" alt="CSS">
+                <p>CSS</p>
+            </div>
+            <div class="skill-item">
+                <img src="img/Csharp.png" alt="C#">
+                <p>C#</p>
+            </div>
+            <div class="skill-item">
+                <img src="img/PHP.png" alt="PHP">
+                <p>PHP</p>
+            </div>
+            <div class="skill-item">
+                <img src="img/JavaScript.png" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+        </div>
+
+        <h3>Languages</h3>
+        <div class="skills-container">
+            <div class="skill-item language">
+                <p class="lang-name">French</p>
+                <span class="lang-level">Native</span>
+            </div>
+            <div class="skill-item language">
+                <p class="lang-name">English</p>
+                <span class="lang-level">B1 - B2</span>
+            </div>
+            <div class="skill-item language">
+                <p class="lang-name">Spanish</p>
+                <span class="lang-level">A2</span>
+            </div>
+        </div>
+
+        <h3>Soft Skills</h3>
+        <div class="soft-skills-container">
+            <span class="soft-skill-tag">Time Management</span>
+            <span class="soft-skill-tag">Punctual</span>
+            <span class="soft-skill-tag">Responsible</span>
+            <span class="soft-skill-tag">Curious</span>
+        </div>
+
+        <h3>Education and Qualification</h3>
+        <div class="texte">
+            <p>
+                <strong>2024 / now</strong> - BUT Informatique (Technical Bachelor’s Degree in computer science)<br>
+                University of Savoy, IUT Annecy – Annecy-le Vieux, France
+            </p>
+            <p>
+                <strong>2021 / 2024</strong> - French Baccalaureate STMG (Management & Information Science)<br>
+                With honors – Baudelaire High School, Annecy, France
+            </p>
+        </div>
+
+        <h3>Miscellaneous</h3>
+        <div class="texte">
+            <p>
+                I played chess for five years at the Annecy chess club. I finished third in the departmental rankings in 2014.
+            </p>
+        </div>
+    </section>
+
+    <section id="projects" class="contenu">
+        <h2>University projects</h2>
+        
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">Tous</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="app">Logiciel (C#)</button>
+            <button class="filter-btn" data-filter="data">Data / BI</button>
+            <button class="filter-btn" data-filter="ongoing" style="margin-left: 15px;">En cours</button>
+            <button class="filter-btn" data-filter="finished">Terminés</button>
+        </div>
+
+        <div class="projects-container">
+            
+            <div class="project-card" data-category="web" data-status="ongoing">
+                <div class="project-img-container">
+                    <span class="status-badge ongoing">En cours</span>
+                    <img src="img/cube_photo.png" alt="Site Web Cube">
+                </div>
+                <div class="project-info">
+                    <h3>Cube Website Creation</h3>
+                    <p class="summary">Creation of an existing website (Cube) using HTML, PHP, and JavaScript with Laravel framework.</p>
+                    <div class="project-details">
+                        <p>This project involved reproducing the database and building the backend logic. I managed the MVC architecture and ensured data consistency across the platform.</p>
+                        <p><strong>Technologies:</strong> PHP, Laravel, SQL, HTML/CSS.</p>
+                    </div>
+                    <button class="see-more-btn">See more</button>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="app" data-status="finished">
+                <div class="project-img-container">
+                    <span class="status-badge finished">Terminé</span>
+                    <img src="img/jeu_dino_sae.PNG" alt="Jeu Vidéo C#">
+                </div>
+                <div class="project-info">
+                    <h3>Video Game Design</h3>
+                    <p class="summary">Designing a video game in C# with a WPF interface using Visual Studio.</p>
+                    <div class="project-details">
+                        <p>Developed a fully functional game with object-oriented programming concepts. Designed the user interface (UI) with WPF and managed game states and logic.</p>
+                        <p><strong>Technologies:</strong> C#, WPF, .NET, Visual Studio.</p>
+                    </div>
+                    <button class="see-more-btn">See more</button>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="data" data-status="finished">
+                <div class="project-img-container">
+                    <span class="status-badge finished">Terminé</span>
+                    <img src="img/Presentation_BI.png" alt="Base de données">
+                </div>
+                <div class="project-info">
+                    <h3>Database & Power BI</h3>
+                    <p class="summary">Creation of a database with Postgres accompanied by a Power BI report.</p>
+                    <div class="project-details">
+                        <p>Modeled a database schema and implemented it using PostgreSQL. Connected the data to Power BI to generate dynamic reports and visualize key performance indicators.</p>
+                        <p><strong>Technologies:</strong> SQL, PostgreSQL, Power BI.</p>
+                    </div>
+                    <button class="see-more-btn">See more</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contenu">
+        <h2>Contact Me</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <p>leomorard74@icloud.com</p>
+            </div>
+            
+            <div class="contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <p>+33 7 66 47 68 47</p>
+            </div>
+
+            <a href="https://www.linkedin.com/in/l%C3%A9o-morard-287325309/" target="_blank" class="contact-item">
+                <i class="fab fa-linkedin"></i>
+                <p>Mon LinkedIn</p>
+            </a>
+        </div>
+    </section>
+    <section id="references" class="contenu">
+        <h2>References</h2>
+        
+        <div class="references-container">
+            
+            <div class="reference-card">
+                <div class="ref-icon">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <h4>Pascal Colin</h4>
+                <p class="ref-role">UML and SQL Teacher</p>
+                <p class="ref-place">IUT Annecy</p>
+                <a href="mailto:pascal.colin@univ-smb.fr" class="ref-email">pascal.colin@univ-smb.fr</a>
+            </div>
+
+            <div class="reference-card">
+                <div class="ref-icon">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <h4>Yohann Gaillard</h4>
+                <p class="ref-role">Management Teacher</p>
+                <p class="ref-place">IUT Annecy</p>
+                <a href="mailto:yohann.gaillard@univ-smb.fr" class="ref-email">yohann.gaillard@univ-smb.fr</a>
+            </div>
+
+        </div>
+    </section>
+    <script src="main.js" defer></script>
+</body>
+</html>
