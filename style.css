@@ -595,4 +595,20 @@ a.contact-item:hover i {
     background-color: #63b3ed;
     color: #1a202c;
     border-color: #63b3ed;
+
+}
+
+.project-date {
+    color: #63b3ed; /* Utilise le bleu de votre thème */
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-top: 0.4rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Espace entre l'icône et le texte */
+}
+
+.project-date i {
+    font-size: 0.9rem; /* Taille de l'icône calendrier */
 }
